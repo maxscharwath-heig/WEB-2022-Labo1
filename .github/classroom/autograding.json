@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "cypress body",
+      "setup": "npm install && sudo apt-get install chromium-browser",
+      "run": "npm run test-with-server -- \"npm run cypress:run -- --spec ./cypress/e2e/body.cy.js\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "cypress player",
+      "setup": "npm install && sudo apt-get install chromium-browser",
+      "run": "npm run test-with-server -- \"npm run cypress:run -- --spec ./cypress/e2e/player.cy.js\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cypress playlist info",
+      "setup": "npm install && sudo apt-get install chromium-browser",
+      "run": "npm run test-with-server -- \"npm run cypress:run -- --spec ./cypress/e2e/playlist-info.cy.js\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cypress playlist songs",
+      "setup": "npm install && sudo apt-get install chromium-browser",
+      "run": "npm run test-with-server -- \"npm run cypress:run -- --spec ./cypress/e2e/playlist-songs.cy.js\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cypress queue",
+      "setup": "npm install && sudo apt-get install chromium-browser",
+      "run": "npm run test-with-server -- \"npm run cypress:run -- --spec ./cypress/e2e/queue.cy.js\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cypress scroll",
+      "setup": "npm install && sudo apt-get install chromium-browser",
+      "run": "npm run test-with-server -- \"npm run cypress:run -- --spec ./cypress/e2e/scroll.cy.js\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    }
+  ]
+}
