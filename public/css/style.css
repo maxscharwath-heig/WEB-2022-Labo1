@@ -12,3 +12,180 @@ h6 {
   margin: 0;
 }
 
+/* Title styles */
+
+.title{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.subtitle1{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subtitle2{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.body2{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.overline{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Main */
+main{
+  padding: 86px 86px 0 86px;
+  flex: 1;
+  overflow: auto;
+}
+
+#playlist-info{
+  display: flex;
+  margin-bottom: 48px;
+  align-items: flex-end;
+}
+
+#playlist-info img{
+  width: 250px;
+  height: 250px;
+  margin-right: 32px;
+}
+
+.playlist-title{
+  margin: 8px 0 8px 0;
+}
+
+.track-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.track-list li{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+
+/* Player */
+
+#player{
+  width: 100%;
+
+  background-color: #fff;
+
+  border-top: 1px solid #E5E7EB;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px;
+  align-items: center;
+}
+
+.left-side{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-self: start;
+}
+
+.track-info{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.album-cover{
+  height: 100%;
+  width: auto;
+  margin-right: 16px;
+}
+
+.player-controller{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-controller img{
+  height: 40px;
+  width: 40px;
+}
+
+.player-controller img:first-child{
+  margin-right: 32px;
+}
+
+.player-controller img:last-child{
+  margin-left: 32px;
+}
+
+
+.powered-by{
+  width: 150px;
+  margin-right: 16px;
+  justify-self: end;
+}
+
+.powered-by img{
+  width: 100%;
+}
+
+/* Queue */
+#queue{
+  position: relative;
+  width: 330px;
+  height: 100%;
+  padding: 32px;
+  background-color: #F3F4F6;
+  border-left: 1px solid #E5E7EB;
+}
+
+.empty{
+  display: flex;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  color: #9CA3AF;
+}
